@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@font-face {
+  font-family: start;
+  src: url(/fonts/PressStart2P-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+body {
+  background-image: url(/src/the-space-monkey-4k-ua.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  min-height: 100vh;
+}
+
+main {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  height: 100vh;
+}
+main .container {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+  padding: 1rem;
+}
+main .container .userSrc i {
+  font-size: 3rem;
+  background-color: #fff;
+  padding: 1rem 1.1rem;
+  border-radius: 50%;
+}
+main .container .title h1 {
+  font-family: Orbitron;
+  font-style: italic;
+  color: #fff;
+  text-shadow: black 5px 5px 12px;
+}
+main .container .nome p, main .container .email p, main .container .telefone p, main .container .login p, main .container .senha p {
+  font-family: poppins;
+}
+main .container .nome .emailText, main .container .nome .senhaText, main .container .nome .loginText, main .container .email .emailText, main .container .email .senhaText, main .container .email .loginText, main .container .telefone .emailText, main .container .telefone .senhaText, main .container .telefone .loginText, main .container .login .emailText, main .container .login .senhaText, main .container .login .loginText, main .container .senha .emailText, main .container .senha .senhaText, main .container .senha .loginText {
+  border-radius: 2px;
+  border: none;
+  padding: 0.6rem;
+}
+main .container .button {
+  margin: 1rem 0;
+}
+main .container .button .logar {
+  padding: 1rem 1.5rem;
+  border: none;
+}
+main .container .help {
+  text-align: start;
+}
+main .container .help p {
+  font-style: italic;
+}/*# sourceMappingURL=login.css.map */

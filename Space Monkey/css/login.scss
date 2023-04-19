@@ -1,0 +1,73 @@
+@import './variables';
+@import './mixins';
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    min-width: max-content;
+}
+body{
+    background-image: url(/src/the-space-monkey-4k-ua.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-width: max-content;
+    min-height: 100vh;
+}
+main{
+    min-width: fit-content;
+    height: 100vh;
+
+    .container{
+        background-color: rgb(255,255,255,0.5);
+        width: 400px;
+        margin:auto;
+        text-align: center;
+        margin-top: 100px;
+        padding: 1rem;
+        .userSrc{
+            i{
+                font-size: 3rem;
+                background-color: #fff;
+                padding: 1rem 1.1rem;
+                border-radius: 50%;
+            }
+            
+        }
+        .title{
+            h1{
+                font-family: Orbitron;
+                font-style: italic;
+                color: #fff;
+                text-shadow: black 5px 5px 12px;
+            }
+        }
+        .nome,.email,.telefone,.login,.senha{
+            p{
+                font-family: poppins;
+            }
+            .emailText,.senhaText,.loginText{
+                border-radius: 2px;
+                border:none;
+                padding: 0.6rem;
+            }
+        }
+        
+        .button{
+            margin: 1rem 0;
+            .logar{
+               padding: 1rem 1.5rem;
+               border:none;
+            }
+        }
+        .help{
+            text-align: start;
+            p{
+                font-style: italic;
+            }
+        }
+    }
+}

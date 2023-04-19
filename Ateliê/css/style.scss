@@ -1,0 +1,214 @@
+@import './variables';
+@import './mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+header{
+    text-align: center;
+    .headerSocialMedia{
+        font-size: 3rem;
+        color: $terciary-color;
+        margin-top:2rem;
+    }
+}
+body {
+    background-image: url(/src/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.featuredSpace {
+    display: flex;
+    margin-top: 7rem;
+    .src{
+        img{
+            width: 100%;
+        }
+    }
+    .container {
+        .title {
+
+            h1 {
+                font-family: poppins;
+                font-size: 5rem;
+                color: $fourth-color;
+                margin: 0 1rem;
+            }
+        }
+
+        .description {
+
+            margin: 0 1rem;
+
+            p {
+                font-family: montserrat;
+                font-weight: 600;
+                color: $fourth-color;
+                font-size: 2rem;
+                margin: 1rem 0;
+            }
+
+            .buttons {
+                text-align: start;
+
+                .email {
+                    width: 50%;
+                    padding: 1rem;
+                    border: 1px solid $terciary-color
+                }
+
+                .email:focus {
+                    outline: 1px solid $terciary-color;
+                }
+
+                .btn {
+                    padding: 1rem;
+                    font-family: montserrat;
+                    background-color: $buttons;
+                    border: none;
+                    color: $fourth-color;
+                }
+
+                .btn:hover {
+                    background-color: $fourth-color;
+                    color: #000;
+                }
+            }
+        }
+
+    }
+}
+
+.nextPage {
+    text-align: center;
+
+    i {
+        font-size: 5rem;
+        animation: loop 1.5s infinite;
+        color: $fourth-color;
+    }
+
+    a {
+        color: unset;
+    }
+}
+
+main {
+    margin-top: 7rem;
+    .titleSection {
+        text-align: center;
+        min-width: fit-content;
+
+        h1 {
+            color: $fourth-color;
+            font-size: 3.5rem;
+            font-family: poppins;
+        }
+    }
+
+    .galery {
+    margin-top: 4rem;
+    @include grid();
+    .box {
+            width: 300px;
+            height: 400px;
+
+            img {
+                outline: 3px solid $terciary-color;
+            }
+
+            .container {
+                background-color: $buttons;
+                transform: translateY(-130%);
+                text-align: start;
+
+                .title {
+                    font-size: 1.5rem;
+                    font-family: montserrat;
+                    color: $fourth-color;
+                }
+
+                .description {
+                    color: $fourth-color;
+                    font-size: 1rem;
+                    font-family: poppins;
+                }
+
+                .avaliate {
+                    .star:nth-child(1),.star:nth-child(2),.star:nth-child(3){
+                        color: gold;
+
+                    }
+                    
+                }
+            }
+        }
+
+        .box:hover {
+            transform: scale(105%, 105%);
+            transition: 1s;
+        }
+    }
+}
+
+    .galery{
+        .box:nth-child(2),.box:nth-child(3),.box:nth-child(6),.box:nth-child(7),.box:nth-child(10){
+            .container{
+                text-align: center;
+            }
+        }
+    }
+
+    .galery{
+        .box:nth-child(4),.box:nth-child(8){
+            .container{
+                text-align: end;
+            }
+        }
+    }
+
+footer{
+    color: $fourth-color;
+    @include flex();
+    .help,.socialMedia,.allRights{
+        text-align: center;
+        font-family: montserrat;
+    }
+}
+
+    //keyframes
+@keyframes loop {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+//responsiveMode
+@media only screen and (max-width:700px) {
+    .featuredSpace{
+        .src{
+            display: none;
+        }
+    }
+    footer{
+    @include grid();
+    font-size: 2rem;
+
+    }
+}

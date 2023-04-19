@@ -1,0 +1,397 @@
+@import './variables';
+@import './mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    color: $fourth-color;
+}html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $primary-color;
+    min-height: 100vh;
+    
+}
+
+.interativeIndex {
+    transition: 1s;
+
+    .destacImageArea {
+        background-color: $secondary-color;
+        text-align: center;
+
+        img {
+            width: 29.28vw;
+            height: 22vw;
+        }
+    }
+}
+
+.closeDestacImageArea {
+    background-color: $secondary-color;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+
+    .arrowDown {
+        display: none;
+    }
+
+    #arrow {
+        display: none;
+    }
+}
+
+.floatButtons {
+    background-color: $primary-color;
+    padding: 0.2vw;
+    margin-top: -0.2vw;
+    transition: 1s;
+
+    .container {
+        @include flex();
+        justify-content: space-between;
+        font-size: 1rem;
+        margin: 2vw;
+        font-family: start;
+        background-color: $primary-color;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .download {
+
+        p {
+            cursor: pointer;
+
+        }
+
+        ul {
+            list-style: none;
+            position: absolute;
+            display: none;
+            z-index: 999;
+            background-color: $primary-color;
+        }
+
+        li {
+            padding: 1vw;
+        }
+
+    }
+}
+
+.download:hover {
+    ul {
+        display: block;
+    }
+}
+
+.rocket {
+    transition: 1s;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+
+    .srcRocket {
+        img {
+            width: 29.28vw;
+        }
+    }
+}
+
+main {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 8vw;
+
+    .movie {
+        text-align: center;
+
+        iframe {
+            border: 3px solid $fourth-color;
+        }
+
+        .description {
+            background-color: $terciary-color;
+            border-radius: 10px;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+
+            p {
+                font-size: 1.5rem;
+                font-family: poppins;
+            }
+        }
+    }
+}
+
+.character,
+.history,
+.aboutGame {
+    margin: 10vw 0;
+
+    .container {
+        margin: 5vw 0;
+        display: flex;
+
+        .charImage {
+            img {
+                width: 30vw;
+                border-radius: 10px;
+                border: 3px solid $terciary-color;
+            }
+        }
+
+        .characterDescription {
+            text-align: center;
+
+            h1 {
+                font-size: 2rem;
+                font-family: start;
+            }
+
+            p {
+                font-family: start;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .title {
+        background-color: $secondary-color;
+        text-align: center;
+
+        h1 {
+            font-size: 5rem;
+            font-family: bebas neue;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.history,
+.aboutGame {
+    .container {
+        .characterDescription {
+            h1 {
+                margin: 1vw 0
+            }
+        }
+
+        display: block;
+        text-align: center;
+
+        .charImage {
+            img {
+                margin: 3vw 0;
+            }
+        }
+    }
+}
+
+.returnIndex {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: end;
+    display: none;
+
+    i {
+        font-size: 3rem;
+    }
+}
+footer{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+/********************************************
+*********************************************
+******************** Para fins de teste *************************
+*********************************************/
+
+@media only screen and (max-width:620px) {
+    html{
+        scroll-behavior: smooth;
+        min-width: max-content;
+
+    }
+    body{
+        background-color: $primary-color;
+        min-width: max-content;
+        min-height: 100vh;
+    }
+    
+    .interativeIndex {
+        transition: 1s;
+        min-width: fit-content;
+        .destacImageArea {
+            background-color: $secondary-color;
+            text-align: center;
+    
+            img {
+                width: 200px;
+                height: 150px;
+            }
+        }
+    }
+    
+    .closeDestacImageArea {
+        background-color: $secondary-color;
+        text-align: center;
+        font-size: 1rem;
+        cursor: pointer;
+    
+        .arrowDown {
+            display: none;
+        }
+    
+        #arrow {
+            display: none;
+        }
+    }
+    
+    .floatButtons {
+        background-color: $primary-color;
+        padding: 0.2px;
+        margin-top: -0.2px;
+        transition: 1s;
+    
+        .container {
+            @include grid();
+            font-size: 1rem;
+            margin: 10px;
+            font-family: start;
+            background-color: $primary-color;
+    
+            a {
+                text-decoration: none;
+            }
+        }
+    
+        .download {
+    
+            p {
+                cursor: pointer;
+    
+            }
+    
+            ul {
+                list-style: none;
+                position: absolute;
+                display: none;
+                z-index: 999;
+                background-color: $primary-color;
+            }
+    
+            li {
+                padding: 1vw;
+            }
+    
+        }
+    }
+    
+    .download:hover {
+        ul {
+            display: block;
+        }
+    }
+    
+    .rocket {
+        transition: 1s;
+    
+        .srcRocket {
+            img {
+                width: 29.28vw;
+            }
+        }
+    }
+    
+    main {
+        display: none;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 250px;
+        width: fit-content;
+    
+        .movie {
+            text-align: center;
+    
+            iframe {
+                width: fit-content;
+                border: 3px solid $fourth-color;
+            }
+    
+            .description {
+                background-color: $terciary-color;
+                border-radius: 10px;
+                width: 100%;
+    
+                p {
+                    font-size: 1.5rem;
+                    font-family: poppins;
+                }
+            }
+        }
+    }
+    
+    .character,.history,.aboutGame {
+        width: fit-content;
+        .container {
+            @include grid();
+            margin: 5vw 0;
+    
+            .charImage {
+                text-align: center;
+                img {
+                    width: 180px;
+                    border-radius: 10px;
+                    border: 3px solid $terciary-color;
+                }
+            }
+    
+            .characterDescription {
+                text-align: center;
+    
+                h1 {
+                    font-size: 2rem;
+                    font-family: start;
+                }
+    
+                p {
+                    font-family: start;
+                    font-size: 1rem;
+                }
+            }
+        }
+    
+        .title {
+            background-color: $secondary-color;
+            text-align: center;
+            background-attachment: fixed;
+    
+            h1 {
+                font-size: 5rem;
+                font-family: bebas neue;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    
+    
+}
+
+@media only screen and (max-width:475px) {
+    main{
+        top: 350px;
+    }
+}

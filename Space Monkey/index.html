@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The game Space Monkey - Online">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'
+        integrity='sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=='
+        crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <script src="js/main.js" defer></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <title>Space Monkey</title>
+</head>
+
+<body>
+    <section class="interativeIndex">
+        <div class="destacImageArea">
+            <img src="src/spaceMonkeys.png" alt="Principal Monkey" width="400px" height="300px">
+
+            <div class="closeDestacImageArea" id="closeDestacImageArea">
+                <i class="arrowUp fas fa-arrow-up-from-bracket" onclick="climb()"></i>
+                <i class="arrowDown fas fa-arrow-down" onclick="down()"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="floatButtons">
+        <div class="container">
+            <div class="home">
+                <a href="#" class="Home">Home</a>
+            </div>
+            <section class="download">
+                <p>Guia</p>
+                <ul>
+                    <a href="#MonkeyDOM" onclick="climb()" >        
+                        <li>Monkey DOM</li>
+                    </a>
+                    <a href="#MonkeyStuart"onclick="climb()">
+                        <li> Monkey Stuart</li>
+                    </a>
+                    <a href="#MonkeyCesar"onclick="climb()">
+                        <li>Monkey Cesar</li>
+                    </a>
+                    <a href="#MonkeyJamal"onclick="climb()">
+                        <li>Monkey Jamal</li>
+                    </a>
+                    <a href="#history"onclick="climb()">
+                        <li>History</li>
+                    </a>
+                    <a href="#about"onclick="climb()">
+                        <li>About Game</li>
+                    </a>
+                </ul>
+            </section>
+
+            <section class="download">
+                <p>Download</p>
+                <ul>
+                    <a href="#">
+                        <li>Download for Windows</li>
+                    </a>
+                    <a href="#">
+                        <li>Download for Linux</li>
+                    </a>
+                    <a href="#">
+                        <li>Download for ChromeOs</li>
+                    </a>
+                    <a href="#">
+                        <li>Download for Mobile</li>
+                    </a>
+                </ul>
+            </section>
+
+            <div class="Login">
+                <a href="pages/login.html">
+                    <p>Login</p>
+                </a>
+            </div>
+            <div class="register">
+                <a href="/pages/register.html">Register</a>
+            </div>
+        </div>
+    </section>
+    <section class="rocket">
+        <div class="srcRocket">
+            <marquee direction="left"><img src="src/rocket.png" width="400px" alt="rocket"></marquee>
+        </div>
+    </section>
+
+    <main id="main">
+        <div class="movie">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1rvnn4uQWG8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <div class="description">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam necessitatibus eos asperiores
+                    odio illo soluta architecto cum numquam, autem optio amet tempore voluptas suscipit, quia pariatur
+                    sint excepturi? Aperiam, rerum.</p>
+            </div>
+        </div>
+
+        <section class="character">
+            <div class="title">
+                <h1 id="MonkeyDOM">Monkey DOM</h1>
+            </div>
+            <div class="container">
+                <div class="charImage">
+                    <img src="src/monkey1.jpg" alt="MonkeyPrincipal">
+                </div>
+                <div class="characterDescription">
+                    <h1>Pilot</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora doloribus omnis sed quia,
+                        tempore unde natus nulla. Voluptas recusandae dolores unde soluta perspiciatis ea nesciunt
+                        aperiam eligendi, totam aliquam?</p>
+                </div>
+            </div>
+        </section>
+        <section class="character">
+            <div class="title">
+                <h1 id="MonkeyStuart">Monkey Stuart</h1>
+            </div>
+            <div class="container">
+                <div class="characterDescription">
+                    <h1>Programer</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora doloribus omnis sed quia,
+                        tempore unde natus nulla. Voluptas recusandae dolores unde soluta perspiciatis ea nesciunt
+                        aperiam eligendi, totam aliquam?</p>
+                </div>
+                <div class="charImage">
+                    <img src="src/monkey2.jpg" alt="MonkeyPrincipal">
+                </div>
+            </div>
+        </section>
+        <section class="character">
+            <div class="title">
+                <h1 id="MonkeyCesar">Monkey Cesar</h1>
+            </div>
+            <div class="container">
+                <div class="charImage">
+                    <img src="src/monkey3.jpg" alt="MonkeyPrincipal">
+                </div>
+                <div class="characterDescription">
+                    <h1>Engineer</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora doloribus omnis sed quia,
+                        tempore unde natus nulla. Voluptas recusandae dolores unde soluta perspiciatis ea nesciunt
+                        aperiam eligendi, totam aliquam?</p>
+                </div>
+            </div>
+        </section>
+        <section class="character">
+            <div class="title">
+                <h1 id="MonkeyJamal">Monkey Jamal</h1>
+            </div>
+            <div class="container">
+                <div class="characterDescription">
+                    <h1>Shooter</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora doloribus omnis sed quia,
+                        tempore unde natus nulla. Voluptas recusandae dolores unde soluta perspiciatis ea nesciunt
+                        aperiam eligendi, totam aliquam?</p>
+                </div>
+                <div class="charImage">
+                    <img src="src/monkey4.jpg" alt="MonkeyPrincipal">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="history">
+            <div class="title">
+                <h1 id="history">HISTORY</h1>
+            </div>
+            <div class="container">
+                <div class="characterDescription">
+                    <h1>The Origin</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora doloribus omnis sed quia,
+                        tempore unde natus nulla. Voluptas recusandae dolores unde soluta perspiciatis ea nesciunt
+                        aperiam eligendi, totam aliquam?</p>
+                </div>
+                <div class="charImage">
+                    <img src="src/monkeyLunatic.jpg" alt="MonkeyPrincipal">
+                </div>
+                <div class="characterDescription">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora doloribus omnis sed quia,
+                        tempore unde natus nulla. Voluptas recusandae dolores unde soluta perspiciatis ea nesciunt
+                        aperiam eligendi, totam aliquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellat reprehenderit adipisci dolore. Quia nulla eligendi nemo iste repellendus modi suscipit
+                        nam deserunt nostrum, commodi earum sunt quo eveniet debitis voluptate?</p>
+                </div>
+                <div class="charImage">
+                    <img src="src/map.png" alt="MonkeyPrincipal">
+                </div>
+                <div class="characterDescription">
+                    <p>Lorem ipsum dolor sit amet pisci dolore. Quia nulla eligendi nemo iste repellendus modi suscipit
+                        nam deserunt nostrum, commodi earum sunt quo eveniet debitis voluptate?</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutGame">
+            <div class="title">
+                <h1 id="about">About Game</h1>
+            </div>
+
+            <div class="container">
+                <div class="characterDescription">
+                    <h1>The Origin</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora doloribus omnis sed quia,
+                        tempore unde natus nulla. Voluptas recusandae dolores unde soluta perspiciatis ea nesciunt
+                        aperiam eligendi, totam aliquam?</p>
+                </div>
+                <div class="charImage">
+                    <img src="src/gameMonkey.png" alt="MonkeyPrincipal">
+                </div>
+                <div class="characterDescription">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora doloribus omnis sed quia,
+                        tempore unde natus nulla. Voluptas recusandae dolores unde soluta perspiciatis ea nesciunt
+                        aperiam eligendi, totam aliquam?</p>
+                </div>
+            </div>
+        </section>
+        <footer> Projetc Created by Gabriel Aroucas &copy; 2023 - Direitos Livres</footer>
+    </main>
+    <section class="returnIndex">
+        <a href="#closeDestacImageArea"><i class="arrowIndex fas fa-circle-arrow-up"></i></a>
+    </section>
+
+
+</body>
+
+</html>

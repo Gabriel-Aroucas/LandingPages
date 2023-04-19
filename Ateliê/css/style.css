@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  text-align: center;
+}
+header .headerSocialMedia {
+  font-size: 3rem;
+  color: #FFEBB4;
+  margin-top: 2rem;
+}
+
+body {
+  background-image: url(/src/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.featuredSpace {
+  display: flex;
+  margin-top: 7rem;
+}
+.featuredSpace .src img {
+  width: 100%;
+}
+.featuredSpace .container .title h1 {
+  font-family: poppins;
+  font-size: 5rem;
+  color: #FBFFB1;
+  margin: 0 1rem;
+}
+.featuredSpace .container .description {
+  margin: 0 1rem;
+}
+.featuredSpace .container .description p {
+  font-family: montserrat;
+  font-weight: 600;
+  color: #FBFFB1;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.featuredSpace .container .description .buttons {
+  text-align: start;
+}
+.featuredSpace .container .description .buttons .email {
+  width: 50%;
+  padding: 1rem;
+  border: 1px solid #FFEBB4;
+}
+.featuredSpace .container .description .buttons .email:focus {
+  outline: 1px solid #FFEBB4;
+}
+.featuredSpace .container .description .buttons .btn {
+  padding: 1rem;
+  font-family: montserrat;
+  background-color: rgba(255, 235, 181, 0.5);
+  border: none;
+  color: #FBFFB1;
+}
+.featuredSpace .container .description .buttons .btn:hover {
+  background-color: #FBFFB1;
+  color: #000;
+}
+
+.nextPage {
+  text-align: center;
+}
+.nextPage i {
+  font-size: 5rem;
+  animation: loop 1.5s infinite;
+  color: #FBFFB1;
+}
+.nextPage a {
+  color: unset;
+}
+
+main {
+  margin-top: 7rem;
+}
+main .titleSection {
+  text-align: center;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+main .titleSection h1 {
+  color: #FBFFB1;
+  font-size: 3.5rem;
+  font-family: poppins;
+}
+main .galery {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+main .galery .box {
+  width: 300px;
+  height: 400px;
+}
+main .galery .box img {
+  outline: 3px solid #FFEBB4;
+}
+main .galery .box .container {
+  background-color: rgba(255, 235, 181, 0.5);
+  transform: translateY(-130%);
+  text-align: start;
+}
+main .galery .box .container .title {
+  font-size: 1.5rem;
+  font-family: montserrat;
+  color: #FBFFB1;
+}
+main .galery .box .container .description {
+  color: #FBFFB1;
+  font-size: 1rem;
+  font-family: poppins;
+}
+main .galery .box .container .avaliate .star:nth-child(1), main .galery .box .container .avaliate .star:nth-child(2), main .galery .box .container .avaliate .star:nth-child(3) {
+  color: gold;
+}
+main .galery .box:hover {
+  transform: scale(105%, 105%);
+  transition: 1s;
+}
+
+.galery .box:nth-child(2) .container, .galery .box:nth-child(3) .container, .galery .box:nth-child(6) .container, .galery .box:nth-child(7) .container, .galery .box:nth-child(10) .container {
+  text-align: center;
+}
+
+.galery .box:nth-child(4) .container, .galery .box:nth-child(8) .container {
+  text-align: end;
+}
+
+footer {
+  color: #FBFFB1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .help, footer .socialMedia, footer .allRights {
+  text-align: center;
+  font-family: montserrat;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 700px) {
+  .featuredSpace .src {
+    display: none;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Main blog project">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'
+        integrity='sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=='
+        crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <title>Ateliê</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerSocialMedia">
+            <i class="fab fa-facebook" aria-hidden="true"></i>
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <i class="fab fa-tiktok" aria-hidden="true"></i>
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="featuredSpace">
+        <div class="container">
+            <div class="title">
+                <h1>Ateliê </h1>
+            </div>
+            <div class="description">
+                <p>Bem vindo ao atliê da rosa, cadastre-se e fique por dentro das novidades !</p>
+                <p>Insira seu email abaixo e receba nosso porfifólio de hoje</p>
+                <form action="https://formspree.io/f/xqkoyweg" method="POST">
+                <div class="buttons">
+                    <input type="email" name="email" class="email" placeholder="ex: marcela@gmail.com" required>
+                    <input type="submit" class="btn" value="Cadastrar">
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="src">
+            <img src="src/undraw_blooming_re_2kc4.svg" width="400px" height="400px" alt="">
+        </div>
+    </div>
+
+    <div class="nextPage">
+        <a href="#nav"> <i class="fas fa-angle-down"></i></a>
+    </div>
+
+    <main>
+        <div class="titleSection">
+            <h1 id="nav">Veja nosso portifólio desta semana</h1>
+        </div>
+        <div class="galery">
+            <div class="box">
+                <img src="src/1.jpg" alt="">
+                <div class="container">
+                    <div class="title">
+                        <h1>title</h1>
+                    </div>
+                    <div class="description">
+                        <p>lorem lorem lorem lorem lorem</p>
+                    </div>
+
+                    <div class="avaliate">
+                        <div class="star fas fa-star" id="star1" onclick="avaliate(this)"></div>
+                        <div class="star fas fa-star" id="star2" onclick="avaliate(this)"></div>
+                        <div class="star fas fa-star" id="star3" onclick="avaliate(this)" ></div>
+                        <div class="star fas fa-star" id="star4" onclick="avaliate(this)" ></div>
+                        <div class="star fas fa-star" id="star5" onclick="avaliate(this)" ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="src/2.jpg" alt="">
+                <div class="container">
+                    <div class="title">
+                        <h1>title</h1>
+                    </div>
+                    <div class="description">
+                        <p>lorem lorem lorem lorem lorem</p>
+                    </div>
+
+                    <div class="avaliate">
+                        <div class="star fas fa-star" id="star6" onclick="avaliate(this)"></div>
+                        <div class="star fas fa-star" id="star7" onclick="avaliate(this)"></div>
+                        <div class="star fas fa-star" id="star8" onclick="avaliate(this)"></div>
+                        <div class="star fas fa-star" id="star9" onclick="avaliate(this)"></div>
+                        <div class="star fas fa-star" id="star10" onclick="avaliate(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="src/3.jpg" alt="">
+                <div class="container">
+                    <div class="title">
+                        <h1>title</h1>
+                    </div>
+                    <div class="description">
+                        <p>lorem lorem lorem lorem lorem</p>
+                    </div>
+
+                    <div class="avaliate">
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="src/4.jpg" alt="">
+                <div class="container">
+                    <div class="title">
+                        <h1>title</h1>
+                    </div>
+                    <div class="description">
+                        <p>lorem lorem lorem lorem lorem</p>
+                    </div>
+
+                    <div class="avaliate">
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="src/5.jpg" alt="">
+                <div class="container">
+                    <div class="title">
+                        <h1>title</h1>
+                    </div>
+                    <div class="description">
+                        <p>lorem lorem lorem lorem lorem</p>
+                    </div>
+
+                    <div class="avaliate">
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="src/6.jpg" alt="">
+                <div class="container">
+                    <div class="title">
+                        <h1>title</h1>
+                    </div>
+                    <div class="description">
+                        <p>lorem lorem lorem lorem lorem</p>
+                    </div>
+
+                    <div class="avaliate">
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="src/7.jpg" alt="">
+                <div class="container">
+                    <div class="title">
+                        <h1>title</h1>
+                    </div>
+                    <div class="description">
+                        <p>lorem lorem lorem lorem lorem</p>
+                    </div>
+
+                    <div class="avaliate">
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="src/8.jpg" alt="">
+                <div class="container">
+                    <div class="title">
+                        <h1>title</h1>
+                    </div>
+                    <div class="description">
+                        <p>lorem lorem lorem lorem lorem</p>
+                    </div>
+
+                    <div class="avaliate">
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="src/9.jpg" alt="">
+                <div class="container">
+                    <div class="title">
+                        <h1>title</h1>
+                    </div>
+                    <div class="description">
+                        <p>lorem lorem lorem lorem lorem</p>
+                    </div>
+
+                    <div class="avaliate">
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="src/10.jpg" alt="">
+                <div class="container">
+                    <div class="title">
+                        <h1>title</h1>
+                    </div>
+                    <div class="description">
+                        <p>lorem lorem lorem lorem lorem</p>
+                    </div>
+
+                    <div class="avaliate">
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                        <div class="star fas fa-star"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="socialMedia">
+            <h3>Siga nossas redes sociais</h3>
+            <i class="fab fa-facebook" aria-hidden="true"></i>
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <i class="fab fa-tiktok" aria-hidden="true"></i>
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+        </div>
+        <div class="allRights">
+            <p> Ateliê da rosa &copy; 2023 - Todos os direitos reservados</p>
+        </div>
+        <div class="help">
+            <h3>Precisa de ajuda ?</h3>
+            <p>Ligue para</p>
+            <p>90000-0000 <i class="fab fa-whatsapp"></i></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
