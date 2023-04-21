@@ -8,3 +8,7 @@
         </div>
     </div>
  */
+const imgSrc = 'https://via.placeholder.com/150';
+$(".cards").append("<div class='card'/>");
+$(".card").append(`<img src='${imgSrc}' alt='waiting'/>`);
+$(".card").append("<div class ='cardOverlay'/>");
