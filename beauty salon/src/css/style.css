@@ -1,39 +1,169 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
-.cards {
-  border: 1px solid red;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  justify-items: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-.cards .card0, .cards .card1, .cards .card2 {
-  background-color: #000;
-  width: 300px;
-  border: 5px solid #000;
-  position: relative;
-  filter: grayscale(100%);
-}
-.cards .card0 img, .cards .card1 img, .cards .card2 img {
-  width: 300px;
-}
-.cards .card0 .cardOverlay0, .cards .card0 .cardOverlay1, .cards .card0 .cardOverlay2, .cards .card1 .cardOverlay0, .cards .card1 .cardOverlay1, .cards .card1 .cardOverlay2, .cards .card2 .cardOverlay0, .cards .card2 .cardOverlay1, .cards .card2 .cardOverlay2 {
+
+.background {
   position: absolute;
-  border: 1px solid red;
-  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+.background .main {
+  background: linear-gradient(90deg, #D14D72 75%, #FFABAB 25%);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+.background img {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.header .headerBrand {
+  font-size: 3rem;
+  text-decoration: none;
+  font-family: koulen;
+  background: linear-gradient(145deg, #FCC8D1 60%, #FEF2F4 0%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header .navbar .content {
+  display: flex;
+}
+.header .navbar .content li {
+  margin: 0 1rem;
+  list-style: none;
+  font-family: outfit;
+  font-weight: bold;
+  color: #FEF2F4;
+  text-shadow: 10px 3px 10px black;
+}
+.header .socialMedia {
+  font-size: 2rem;
+  color: #FEF2F4;
+}
+
+main .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+main .container .apresentationText h1 {
+  font-size: 5rem;
+  font-family: outfit;
+}
+main .container .apresentationText p {
+  font-family: outfit;
+  font-size: 1.1rem;
+}
+main .container .apresentationText .angle {
+  font-size: 5rem;
+  position: absolute;
+  top: 180px;
+  font-weight: bold;
+  font-family: outfit;
+  rotate: 180deg;
+  width: 50%;
+  text-align: center;
+  animation: loop 2s infinite;
+}
+main .container img {
+  border-radius: 50%;
+}
+main .informativeBallon .content {
+  position: relative;
+  background-color: #FCC8D1;
+  width: 700px;
+  height: 300px;
+  border-radius: 50% 20% 70%;
+}
+main .informativeBallon .content h1 {
+  position: absolute;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
-}
-.cards .card0 .cardOverlay0 h4, .cards .card0 .cardOverlay1 h4, .cards .card0 .cardOverlay2 h4, .cards .card1 .cardOverlay0 h4, .cards .card1 .cardOverlay1 h4, .cards .card1 .cardOverlay2 h4, .cards .card2 .cardOverlay0 h4, .cards .card2 .cardOverlay1 h4, .cards .card2 .cardOverlay2 h4 {
+  margin: 4rem 0;
   font-family: outfit;
-  font-size: 2rem;
-  color: aliceblue;
-  text-shadow: 2px 2px 2px black;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(40, 40, 40);
 }
-.cards .card0:hover, .cards .card1:hover, .cards .card2:hover {
-  filter: grayscale(0%);
-  transition: 1s;
+main .informativeBallon .content .inputs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .informativeBallon .content .inputs p {
+  font-family: outfit;
+}
+main .informativeBallon .content .inputs button {
+  padding: 0.5rem;
+  width: 10%;
+  border: none;
+  background-color: pink;
+  color: white;
+  font-family: outfit;
+}
+main .informativeBallon .content .inputs input {
+  width: 50%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid pink;
+}
+main .informativeBallon .content .inputs ::-moz-placeholder {
+  font-family: outfit;
+}
+main .informativeBallon .content .inputs ::placeholder {
+  font-family: outfit;
+}
+
+.cards .left,
+.cards .right {
+  font-size: 5rem;
+  position: absolute;
+}
+.cards .left {
+  left: 20rem;
+}
+.cards .right {
+  right: 20rem;
+}
+.cards input[type=radio] {
+  display: none;
+}
+.cards label {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }/*# sourceMappingURL=style.css.map */

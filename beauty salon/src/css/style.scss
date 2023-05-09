@@ -1,40 +1,209 @@
 @import './variables';
 
-.cards{
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
-    justify-items: center;
-    .card0,.card1,.card2 {
-        background-color: $secondary-color;
-        width: 300px;
-        border: 5px solid $terciary-color;
-        position: relative;
-        filter: grayscale(100%);
-        img {
-            width: 300px;
+body {}
 
-        }
+* {
+    margin: 0;
+    padding: 0;
+}
 
-        .cardOverlay0,.cardOverlay1,.cardOverlay2 {
-            position: absolute;
-            border: 1px solid red;
-            top: 0;
-            width: 100%;
-            height: 100%;
+.background {
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+
+    .main {
+        background: linear-gradient(90deg, $primary-color 75%, $secondary-color 25%);
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    img {
+        position: absolute;
+        top: 100px;
+        right: 100px;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+
+    .headerBrand {
+        font-size: 3rem;
+        text-decoration: none;
+        font-family: koulen;
+        background: linear-gradient(145deg, $terciary-color 60%, $fourth-color 0%);
+
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .navbar {
+        .content {
             display: flex;
-            justify-content: center;
-            align-items: center;
 
-            h4 {
+            li {
+                margin: 0 1rem;
+                list-style: none;
                 font-family: outfit;
-                font-size: 2rem;
-                color: aliceblue;
-                text-shadow: 2px 2px 2px black;
+                font-weight: bold;
+                color: $fourth-color;
+                text-shadow: 10px 3px 10px black;
+
             }
         }
-    }.card0:hover,.card1:hover,.card2:hover{
-        filter: grayscale(0%);
-        transition: 1s;
+    }
+
+    .socialMedia {
+        font-size: 2rem;
+        color: $fourth-color;
+    }
+}
+
+main {
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .apresentationText {
+            h1 {
+                font-size: 5rem;
+                font-family: outfit;
+            }
+
+            p {
+                font-family: outfit;
+                font-size: 1.1rem;
+            }
+
+            .angle {
+                font-size: 5rem;
+                position: absolute;
+                top: 180px;
+                font-weight: bold;
+                font-family: outfit;
+                rotate: 180deg;
+                width: 50%;
+                text-align: center;
+                animation: loop 2s infinite;
+            }
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+
+    }
+
+    .informativeBallon {
+
+        .content {
+            position: relative;
+            background-color: $terciary-color;
+            width: 700px;
+            height: 300px;
+            border-radius: 50% 20% 70%;
+
+            h1 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                margin: 4rem 0;
+                font-family: outfit;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: rgb(40, 40, 40);
+
+            }
+
+            .inputs {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                p {
+                    font-family: outfit;
+                }
+
+                button {
+                    padding: 0.5rem;
+                    width: 10%;
+                    border: none;
+                    background-color: pink;
+                    color: white;
+                    font-family: outfit;
+                }
+
+                input {
+                    width: 50%;
+                    padding: 0.5rem;
+                    border: none;
+                    border-bottom: 1px solid pink;
+                }
+
+                ::placeholder {
+                    font-family: outfit;
+                }
+
+            }
+        }
+
+    }
+}
+
+.cards {
+
+    .left,
+    .right {
+        font-size: 5rem;
+        position: absolute;
+    }
+
+    .left {
+        left: 20rem;
+    }
+
+    .right {
+        right: 20rem;
+    }
+
+    input[type='radio'] {
+        display: none;
+    }
+
+    label {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+    }
+}
+
+@keyframes loop {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0%);
     }
 }
