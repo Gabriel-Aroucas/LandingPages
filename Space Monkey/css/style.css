@@ -3,10 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
-@font-face {
-  font-family: start;
-  src: url(/fonts/PressStart2P-Regular.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -60,7 +57,7 @@ body {
   justify-content: space-between;
   font-size: 1rem;
   margin: 2vw;
-  font-family: start;
+  font-family: "Press Start 2P", cursive;
   background-color: #000;
 }
 .floatButtons .container a {
@@ -146,12 +143,12 @@ main .movie .description p {
 .history .container .characterDescription h1,
 .aboutGame .container .characterDescription h1 {
   font-size: 2rem;
-  font-family: start;
+  font-family: "Press Start 2P", cursive;
 }
 .character .container .characterDescription p,
 .history .container .characterDescription p,
 .aboutGame .container .characterDescription p {
-  font-family: start;
+  font-family: "Press Start 2P", cursive;
   font-size: 1rem;
 }
 .character .title,
@@ -253,7 +250,7 @@ footer {
     gap: 1rem;
     font-size: 1rem;
     margin: 10px;
-    font-family: start;
+    font-family: "Press Start 2P", cursive;
     background-color: #000;
   }
   .floatButtons .container a {
@@ -330,10 +327,10 @@ footer {
   }
   .character .container .characterDescription h1, .history .container .characterDescription h1, .aboutGame .container .characterDescription h1 {
     font-size: 2rem;
-    font-family: start;
+    font-family: "Press Start 2P", cursive;
   }
   .character .container .characterDescription p, .history .container .characterDescription p, .aboutGame .container .characterDescription p {
-    font-family: start;
+    font-family: "Press Start 2P", cursive;
     font-size: 1rem;
   }
   .character .title, .history .title, .aboutGame .title {

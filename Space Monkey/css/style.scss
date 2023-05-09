@@ -54,7 +54,7 @@ body{
         justify-content: space-between;
         font-size: 1rem;
         margin: 2vw;
-        font-family: start;
+        font-family: 'Press Start 2P', cursive;;
         background-color: $primary-color;
 
         a {
@@ -154,11 +154,11 @@ main {
 
             h1 {
                 font-size: 2rem;
-                font-family: start;
+                font-family: 'Press Start 2P', cursive;;
             }
 
             p {
-                font-family: start;
+                font-family: 'Press Start 2P', cursive;;
                 font-size: 1rem;
             }
         }
@@ -269,7 +269,7 @@ footer{
             @include grid();
             font-size: 1rem;
             margin: 10px;
-            font-family: start;
+            font-family: 'Press Start 2P', cursive;;
             background-color: $primary-color;
     
             a {
@@ -364,11 +364,11 @@ footer{
     
                 h1 {
                     font-size: 2rem;
-                    font-family: start;
+                    font-family: 'Press Start 2P', cursive;;
                 }
     
                 p {
-                    font-family: start;
+                    font-family: 'Press Start 2P', cursive;;
                     font-size: 1rem;
                 }
             }
