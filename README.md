@@ -1,4 +1,4 @@
-# Welcome to the section: Aplications
+# Welcome to the section: Landing Pages
 
 **About Section:**
 This section storage all landing pages created by me
